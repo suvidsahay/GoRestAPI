@@ -1,6 +1,6 @@
 # Rest API Written in Golang
 
-##Setting up a development environment
+## Setting up a development environment
 
 ```bash
 # Get the code
@@ -21,7 +21,7 @@ Assuming that Postgres is installed:
   sudo -u postgres createdb -O factly factly
   ```
   
-###Configuration
+### Configuration
   Create .env file based in sample.env and change the password provided while creating the factly user
   
  ## Starting the web server
