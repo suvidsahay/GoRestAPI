@@ -38,7 +38,7 @@ func (a *App) createUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	responses.JSON(w, http.StatusOK, user)
+	responses.JSON(w, http.StatusCreated, user)
 }
 
 func (a *App) updateUser(w http.ResponseWriter, r *http.Request) {

@@ -34,7 +34,7 @@ Assuming that Postgres is installed:
  go run main.go
 ```
 
-##Consuming the REST API endpoints
+## Consuming the REST API endpoints
 
 * GET /users
 ```bash
