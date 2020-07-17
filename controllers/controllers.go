@@ -40,7 +40,7 @@ func (a *App) Initialize(host, port, user, password, dbname string) {
 	a.initializeRoutes()
 }
 
-func(a *App) initializeRoutes() {
+func (a *App) initializeRoutes() {
 	a.Router.HandleFunc("/users", a.getUsers).Methods("GET")
 	a.Router.HandleFunc("/user", a.createUser).Methods("POST")
 	a.Router.HandleFunc("/user/{id}", a.updateUser).Methods("PUT")
@@ -51,4 +51,3 @@ func (a *App) Run(addr string) {
 	log.Printf("\nServer starting on port %s", addr)
 	log.Fatal(http.ListenAndServe(addr, a.Router))
 }
-

@@ -57,7 +57,7 @@ func clearTable() {
 	a.DB.Exec("ALTER SEQUENCE userdb_userid_seq RESTART WITH 1")
 }
 
-func getOriginalUser (id int) (types.User, error) {
+func getOriginalUser(id int) (types.User, error) {
 	rows, err := a.DB.Query("SELECT * FROM userdb WHERE userid = $1", id)
 	if err != nil {
 		log.Fatal(err)

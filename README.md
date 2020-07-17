@@ -11,7 +11,7 @@ cd Factly
 ## Configuration
 
 ### Postgres database setup
-Assuming that Postgres is installed:
+Assuming that Postgres(v12 or later) is installed:
 * Create role:
   ```bash
   sudo -u postgres createuser -P factly     # prompts for password
@@ -26,7 +26,7 @@ Assuming that Postgres is installed:
   
  ## Starting the web server
  
- The web server can be started as shown below. By default it listens for
+ The web server can be started as shown below(assuming Go 1.13 is installed. By default it listens for
  HTTP connections on port 5000, so point your client at
  `localhost:5000`.
  
@@ -54,4 +54,11 @@ curl -XPUT -d '{"name":"New Name"}' -H 'Content-Type: application/json' localhos
 * DELETE /user/{id}
 ```bash
 curl -XDELETE localhost:5000/user/1
+```
+
+## Unit Testing using Go testing package 
+
+Run the following to command to test your application
+```bash
+go test -v
 ```

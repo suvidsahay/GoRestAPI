@@ -5,8 +5,8 @@ import (
 	"errors"
 	"github.com/gorilla/mux"
 	"github.com/suvidsahay/Factly/database"
-	"github.com/suvidsahay/Factly/types"
 	"github.com/suvidsahay/Factly/responses"
+	"github.com/suvidsahay/Factly/types"
 	"net/http"
 )
 
