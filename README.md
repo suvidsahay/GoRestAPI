@@ -4,7 +4,7 @@
 
 ```bash
 # Get the code
-git clone https://github.com/suvidsaha/Factly
+git clone https://github.com/suvidsahay/GoRestAPI Factly
 cd Factly
 ```
 
